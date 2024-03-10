@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image Gallery</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        /* .mensaje {
+            position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#special-message {
+    font-size: 24px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin: 0;
+} */
+.mensaje {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+#special-message {
+    font-size: 5vw; /* Tamaño de la fuente relativo al ancho de la ventana */
+    color: violet;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="mensaje">
+            <h1 id="special-message">Para la persona más especial que existe</h1>
+        </div>
+    
+
+        <div class="box">
+            <span style="--i:1;"><img src="img/lu1.jpg" alt=""></span>
+            <span style="--i:2;"><img src="img/lu2.jpg" alt=""></span>
+            <span style="--i:3;"><img src="img/lu3.jpg" alt=""></span>
+            <span style="--i:4;"><img src="img/lu4.jpg" alt=""></span>
+            <span style="--i:5;"><img src="img/lu5.jpg" alt=""></span>
+            <span style="--i:6;"><img src="img/lu6.jpeg" alt=""></span>
+            <span style="--i:7;"><img src="img/lu6.jpg" alt=""></span>
+            <span style="--i:8;"><img src="img/lu7.jpg" alt=""></span>
+        </div>
+        <div class="btns">
+            <div class="btn prev"></div>
+            <div class="btn next"></div>
+        </div>
+    </div>
+
+    <script>
+        let prev = document.querySelector('.prev');
+        let next = document.querySelector('.next');
+        let box = document.querySelector('.box');
+
+        let dagrees = 0;
+        
+        prev.addEventListener('click', function(){
+            dagrees += 45;
+            box.style = `transform: perspective(1000px) rotateY(${dagrees}deg)`;
+        })
+        next.addEventListener('click', function(){
+            dagrees -= 45;
+            box.style = `transform: perspective(1000px) rotateY(${dagrees}deg)`;
+        })
+    </script>
+</body>
+</html>

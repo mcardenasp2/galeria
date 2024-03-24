@@ -12,6 +12,66 @@ body {
     background-size: cover;
     transform-style: preserve-3d;
 }
+
+.mensaje {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+#special-message {
+    /* font-size: 3vw;  */
+    color: violet;
+    /* font-style: italic; */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#special-message2 {
+    /* font-size: 2vw;  */
+    color: #FF6347;
+    /* font-style: italic; */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+    }
+ .mensaje {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        #special-message {
+            /* font-size: 3vw;  */
+            color: violet;
+            /* font-style: italic; */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #special-message2 {
+            /* font-size: 2vw;  */
+            color: #FF6347;
+            /* font-style: italic; */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+            }
+
 .box {
     position: relative;
     width: 200px;
